@@ -1,0 +1,76 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+      // "cmd-j": ["workspace::SendKeystrokes", "left"],
+      "cmd-j": null,
+      "alt-cmd-l": null,
+      "cmd-t": null,
+      "cmd-y": "workspace::ToggleBottomDock"
+      // "hyper-p": "workspace::ToggleBottomDock"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-o": null,
+      "cmd-j": null
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-left": "editor::MoveToBeginningOfLine",
+      "cmd-j": ["workspace::SendKeystrokes", "left"],
+      "cmd-i": ["workspace::SendKeystrokes", "up"],
+      "cmd-k": ["workspace::SendKeystrokes", "down"],
+      "cmd-l": ["workspace::SendKeystrokes", "right"],
+      "alt-cmd-j": "editor::MoveToPreviousWordStart",
+      "alt-cmd-l": "editor::MoveToNextWordEnd",
+      "alt-cmd-i": ["workspace::SendKeystrokes", "up up"],
+      "alt-cmd-k": ["workspace::SendKeystrokes", "down down"],
+      "cmd-o": "editor::Format",
+      "alt-cmd-]": "editor::Tab",
+      "alt-cmd-[": "editor::TabPrev",
+      "cmd-t": "file_finder::Toggle",
+      "cmd-p": "command_palette::Toggle",
+      "cmd-'": "terminal_panel::ToggleFocus",
+      "alt-cmd-down": "editor::DuplicateLineDown",
+      "alt-cmd-up": "editor::DuplicateLineDown"
+    }
+  },
+  // {
+  //   "context": "Pane",
+  //   "bindings": {
+  //     "alt-cmd-left": null,
+  //     "alt-cmd-right": null
+  //   }
+  // },
+  {
+    "context": "BufferSearchBar",
+    "bindings": {
+      "cmd-alt-l": null
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "cmd-'": "terminal_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "FileFinder",
+    "use_key_equivalents": true,
+    "bindings": {
+      "cmd": null
+    }
+  }
+]

@@ -1,0 +1,71 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-latest"
+    },
+    "version": "2"
+  },
+  "collaboration_panel": {
+    "dock": "right"
+  },
+  "outline_panel": {
+    "dock": "right"
+  },
+  "project_panel": {
+    "dock": "left"
+  },
+  "features": {
+    "inline_completion_provider": "supermaven"
+  },
+  "base_keymap": "VSCode",
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Catppuccin Mocha"
+  },
+  "languages": {
+    "JSON": {
+      "show_inline_completions": true
+    },
+    "HTML": {
+      "format_on_save": "off"
+    },
+    "ERB": {
+      "formatter": {
+        "external": {
+          "command": "htmlbeautifier",
+          "arguments": []
+        }
+      }
+    },
+    "JavaScript": {
+      "format_on_save": "off"
+    }
+  },
+  "gutter": {
+    "line_numbers": true
+  },
+  "buffer_font_features": { "calt": false },
+  "lsp": {
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "preferences": {
+            "importModuleSpecifier": "non-relative"
+          }
+        }
+      }
+    }
+  }
+}
